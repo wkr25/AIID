@@ -1,2 +1,1 @@
-# AIID
-AI Image Detector
+该项目目标是训练一个模型，用于判断图片是否是AI生成。
