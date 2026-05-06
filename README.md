@@ -26,6 +26,7 @@ AI_Image_Detector/
   predict.py
   app.py
   detector.pth
+  train_test_loss_acc_curve_repeated_runs.png
   paper_draft.md
 ```
 
@@ -76,6 +77,12 @@ python train.py
 2. 训练卷积神经网络
 3. 输出每轮的 loss 和 accuracy
 4. 保存最优模型到 `detector.pth`
+
+## 训练曲线
+
+下图展示了多次重复实验后，每个 epoch 的平均 train/test loss 和 accuracy 变化。
+
+![Train-Test Loss and Accuracy Curve](train_test_loss_acc_curve_repeated_runs.png)
 
 ## 预测单张图片
 
@@ -128,4 +135,3 @@ python app.py
 - `detector.pth` 是训练好的模型参数文件
 - `__pycache__` 是 Python 自动生成的缓存目录，可以忽略
 - 如果你要重新训练，可以直接覆盖 `detector.pth`
-
